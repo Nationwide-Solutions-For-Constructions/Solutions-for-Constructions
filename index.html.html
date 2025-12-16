@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nationwide Solutions for Constructions</title>
+  <style>
+    /* Reset básico */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+    }
+    header img {
+      max-width: 180px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      font-size: 28px;
+    }
+
+    /* Menu fixo */
+    nav {
+      background-color: #0066cc;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+
+    /* Conteúdo principal */
+    main {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .work-item {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .work-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .work-item img {
+      width: 100%;
+      display: block;
+    }
+    .work-item h3 {
+      padding: 15px;
+      font-size: 20px;
+      color: #004080;
+    }
+    .work-item p {
+      padding: 0 15px 15px 15px;
+      font-size: 16px;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Responsivo */
+    @media(max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <img src="nationwide-logo.png" alt="Logo da empresa">
+    <h1>Nationwide Solutions for Constructions</h1>
+  </header>
+
+  <!-- Menu de navegação -->
+  <nav>
+    <a href="#trabalho1">Trabalho 1</a>
+    <a href="#trabalho2">Trabalho 2</a>
+    <a href="#trabalho3">Trabalho 3</a>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <div class="portfolio-grid">
+      <div class="work-item" id="trabalho1">
+        <img src="assets/trabalho1.png" alt="Trabalho 1">
+        <h3>Trabalho 1</h3>
+        <p>Descrição detalhada do seu primeiro trabalho de engenharia civil.</p>
+      </div>
+
+      <div class="work-item" id="trabalho2">
+        <img src="assets/trabalho2.png" alt="Trabalho 2">
+        <h3>Trabalho 2</h3>
+        <p>Descrição detalhada do seu segundo trabalho de engenharia civil.</p>
+      </div>
+
+      <div class="work-item" id="trabalho3">
+        <img src="assets/trabalho3.png" alt="Trabalho 3">
+        <h3>Trabalho 3</h3>
+        <p>Descrição detalhada do seu terceiro trabalho de engenharia civil.</p>
+      </div>
+
+      <!-- Você pode adicionar mais trabalhos aqui -->
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    © 2025 Nationwide Solutions for Constructions
+  </footer>
+
+</body>
+</html>
